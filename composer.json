@@ -1,0 +1,55 @@
+{
+  "name": "edgeinfinity/diy-homepage",
+  "description": "A configurable, widget-based homepage for Flarum, with a Friends of Flarum Widgets bridge.",
+  "type": "flarum-extension",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "EdgeInfinity",
+      "homepage": "https://github.com/edgeinfinity1"
+    }
+  ],
+  "require": {
+    "php": "^8.3",
+    "flarum/core": "^2.0.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "EdgeInfinity\\DiyHomepage\\": "src/"
+    }
+  },
+  "scripts": {
+    "test": [
+      "@php tests/config.php",
+      "@php tests/middleware.php",
+      "@php tests/resources.php"
+    ]
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "DIY Homepage",
+      "category": "feature",
+      "icon": {
+        "name": "fas fa-house",
+        "backgroundColor": "#886a91",
+        "color": "#ffffff"
+      },
+      "optional-dependencies": [
+        "fof-forum-widgets-core"
+      ]
+    }
+  },
+  "homepage": "https://forum.monika.love",
+  "support": {
+    "forum": "https://discuss.flarum.org/d/40135",
+    "issues": "https://github.com/edgeinfinity1/flarum-diy-homepage/issues",
+    "source": "https://github.com/edgeinfinity1/flarum-diy-homepage",
+    "docs": "https://github.com/edgeinfinity1/flarum-diy-homepage/blob/main/docs/DOCUMENTATION.md"
+  },
+  "funding": [
+    {
+      "type": "other",
+      "url": "https://app.unifans.io/c/edgemonix"
+    }
+  ]
+}
